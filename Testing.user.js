@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Tracking Attribute Remover
+// @name         Testing
 // @version      1.0
 // @homepage     https://github.com/Cybo1927/Userscripts/
 // @description  
