@@ -29,6 +29,21 @@ ganalytics.forEach(item => item.remove());
   
 const dblclick = document.querySelectorAll('script[src*="doubleclick.net"]');
 dblclick.forEach(item => item.remove());
+	
+const outbrain = document.querySelectorAll('script[src*="outbrain.com"]');
+outbrain.forEach(item => item.remove());
+	
+const trcklks = document.querySelectorAll('script[src*="trcklks.com"]');
+trcklks.forEach(item => item.remove());
+	
+const advertising = document.querySelectorAll('script[src*="advertising.com"]');
+advertising.forEach(item => item.remove());
+	
+const carbonads = document.querySelectorAll('script[src*="carbonads.com"]');
+carbonads.forEach(item => item.remove());
+	
+const buysellads = document.querySelectorAll('script[src*="buysellads.com"]');
+buysellads.forEach(item => item.remove());
   
 const aboutblank = document.querySelectorAll('iframe[src*="about:blank"]');
 aboutblank.forEach(item => item.remove());
