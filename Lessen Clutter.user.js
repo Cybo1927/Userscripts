@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Lessen Clutter
-// @version      1.1
+// @version      1.2
 // @homepage     https://github.com/Cybo1927/Userscripts/
 // @description  Remove common tracking <script> tags that contain ads/trackers. This makes it a little easier to look through scripts on a page that might be trackers (less clutter)
 // @author       Cybo1927
@@ -23,6 +23,9 @@ function link(){
 	
 const gsynd = document.querySelectorAll('script[src*="googlesyndication.com"]');
 gsynd.forEach(item => item.remove());
+	
+const gtag = document.querySelectorAll('script[src*="googletagmanager.com"]');
+gtag.forEach(item => item.remove());
 
 const ganalytics = document.querySelectorAll('script[src*="google-analytics.com"]');
 ganalytics.forEach(item => item.remove());
