@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Easy HTTP to HTTPS
-// @version      1.3
+// @version      1.4
 // @homepage     https://github.com/Cybo1927/Userscripts/blob/master/Easy%20HTTP%20to%20HTTPS.user.js
 // @description  Redirect HTTP to HTTPS
 // @author       Cybo1927
@@ -12,12 +12,5 @@
 // ==/UserScript==
 
 if (location.protocol !== 'https:') {
-  
 window.location.protocol = 'https:';
-  console.log("Upgrading to secure protocol")
-  
-  } else {
-    
-  console.log("Site already using secure HTTPS protocol")
-    
 }
