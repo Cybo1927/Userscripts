@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Inline Script Buffer
-// @version      1.2
+// @version      1.3
 // @homepage     https://github.com/Cybo1927/Userscripts/
 // @description  Let inline scripts load but then remove them to prevent them from making changes to the site after they've loaded. A lot of adult sites seem to use these inline scripts to make it so when you click anywhere an ad pops up
 // @author       Cybo1927
@@ -15,6 +15,18 @@
 // @include      *virgin*
 // @include      *fuck*
 // @include      *amateur*
+// @include      *jizz*
+// @include      *bbc*
+// @include      *wank*
+// @include      *blowjob*
+// @include      *milf*
+// @include      *cock*
+// @include      *dick*
+// @include      *pussy*
+// @include      *anal*
+// @include      *ass*
+// @include      *tits*
+// @include      *boobs*
 // @exclude      *youtube*
 // @grant        none
 // ==/UserScript==
