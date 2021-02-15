@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Tracking Attribute Remover
-// @version      1.0
+// @version      1.1
 // @homepage     https://github.com/Cybo1927/Userscripts/
 // @description  Block tracking attributes on links - this is how companies like Google track you via their analytics service even if you use a content/ad blocker to block the server
 // @author       Cybo1927
@@ -44,5 +44,11 @@ g.forEach(item => item.removeAttribute('[data-obtrack]'));
 
 const h = document.querySelectorAll('a[data-oburl]');
 h.forEach(item => item.removeAttribute('[data-oburl]'));
+    
+const i = document.querySelectorAll('link[rel*="preconnect"]');
+i.forEach(item => item.removeAttribute('[data-oburl]'));
+    
+const j = document.querySelectorAll('link[rel*="dns-prefetch"]');
+j.forEach(item => item.removeAttribute('[data-oburl]'));
 
 }
