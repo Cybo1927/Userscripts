@@ -46,9 +46,9 @@ const h = document.querySelectorAll('a[data-oburl]');
 h.forEach(item => item.removeAttribute('[data-oburl]'));
     
 const i = document.querySelectorAll('link[rel*="preconnect"]');
-i.forEach(item => item.removeAttribute('[data-oburl]'));
+i.forEach(item => item.removeAttribute('rel'));
     
 const j = document.querySelectorAll('link[rel*="dns-prefetch"]');
-j.forEach(item => item.removeAttribute('[data-oburl]'));
+j.forEach(item => item.removeAttribute('rel'));
 
 }
