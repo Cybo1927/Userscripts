@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Tracking Attribute Remover
-// @version      1.3
+// @version      1.4
 // @homepage     https://github.com/Cybo1927/Userscripts/
 // @description  Block tracking attributes on links
 // @author       Cybo1927
-// @run-at       document-start
+// @run-at       document_idle
 // @include      http://*/*
 // @include      https://*/*
 // @grant        none
@@ -32,23 +32,24 @@ c.forEach(item => item.removeAttribute('onclick'));
 
 const d = document.querySelectorAll('link[rel*="pingback"]');
 d.forEach(item => item.removeAttribute('rel'));
-
-const e = document.querySelectorAll('a[data-beacon-url]');
-e.forEach(item => item.removeAttribute('data-beacon-url'));
-
-const f = document.querySelectorAll('a[data-google-query-id]');
-f.forEach(item => item.removeAttribute('data-google-query-id'));
-
-const g = document.querySelectorAll('a[data-obtrack]');
-g.forEach(item => item.removeAttribute('[data-obtrack]'));
-
-const h = document.querySelectorAll('a[data-oburl]');
-h.forEach(item => item.removeAttribute('[data-oburl]'));
     
-const i = document.querySelectorAll('link[rel="preconnect"]');
-i.forEach(item => item.removeAttribute('rel'));
+const e = document.querySelectorAll('link[rel*="preconnect"]');
+e.forEach(item => item.removeAttribute('[rel*="preconnect"]'));
     
-const j = document.querySelectorAll('link[rel="dns-prefetch"]');
-j.forEach(item => item.removeAttribute('rel'));
+const f = document.querySelectorAll('link[rel*="dns-prefetch"]');
+f.forEach(item => item.removeAttribute('[rel*="dns-prefetch"]'));
+
+const g = document.querySelectorAll('a[data-beacon-url]');
+g.forEach(item => item.removeAttribute('data-beacon-url'));
+
+const h = document.querySelectorAll('a[data-google-query-id]');
+h.forEach(item => item.removeAttribute('data-google-query-id'));
+
+const i = document.querySelectorAll('a[data-obtrack]');
+i.forEach(item => item.removeAttribute('[data-obtrack]'));
+
+const j = document.querySelectorAll('a[data-oburl]');
+j.forEach(item => item.removeAttribute('[data-oburl]'));
+   
 
 }
